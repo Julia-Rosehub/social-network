@@ -1,0 +1,76 @@
+@mixin badge($color) {
+    background: $color;
+    border-color: darken($color, 20%)
+}
+
+@mixin badgeActive($color) {
+    box-shadow: 0 0 15px 5px darken($color, 20%);
+}
+
+.theme_blue {
+   @include badge(lightblue)
+}
+
+.theme_yellow {
+    @include badge(gold)
+}
+
+.theme_pink {
+    @include badge(pink)
+}
+
+.theme_green {
+    @include badge(lightgreen)
+}
+
+.theme_purple {
+    @include badge(rgb(185, 82, 185));
+
+    &.nav.item a.activeLink {
+        color: darkgrey;
+    }
+}
+
+.theme_coral {
+    @include badge(coral)
+}
+
+.theme_grey {
+    @include badge(lightgrey)
+}
+
+.theme_rosybrown {
+    @include badge(rosybrown)
+}
+
+.activeTheme_blue {
+    @include badgeActive(lightblue)
+}
+
+.activeTheme_yellow {
+    @include badgeActive(yellow)
+}
+
+.activeTheme_pink {
+    @include badgeActive(pink)
+}
+
+.activeTheme_green {
+    @include badgeActive(lightgreen)
+}
+
+.activeTheme_purple {
+    @include badgeActive(purple)
+}
+
+.activeTheme_coral {
+    @include badgeActive(coral)
+}
+
+.activeTheme_grey {
+    @include badgeActive(lightgrey)
+}
+
+.activeTheme_rosybrown {
+    @include badgeActive(rosybrown)
+}

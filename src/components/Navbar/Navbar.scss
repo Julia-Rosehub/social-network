@@ -1,0 +1,53 @@
+.navbar {
+    grid-area: n;
+    padding: 20px;
+}
+
+.nav {
+    padding: 15px;
+}
+
+.item {
+    padding: 3px;
+    opacity: 0.8;
+    z-index: 0;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.item a {
+    color: white;
+    text-decoration: none;
+
+    &.activeLink {
+        color: grey;
+    }   
+}
+
+.themeChooser {
+    padding: 20px;
+    border-radius: 5px;
+    margin-top: 30px;
+    box-shadow: 0 0 8px -2px #000;
+
+    & button {
+        padding: 7px;
+        border-radius: 50%;
+        margin: 9px;
+        cursor: pointer;
+        transition: all .1s ease-in-out;
+        border-style: solid;
+    }
+}
+
+.themeChooser button:hover {
+    transform: scale(1.2);
+}
+
+.themeHeading {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+}

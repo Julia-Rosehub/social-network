@@ -1,0 +1,25 @@
+.searchForm {
+    min-width: 150px;
+    position: relative;
+    padding-bottom: 5px;
+    padding-right: 20px;
+    border-bottom: 1px solid #ddd;
+    float: right;
+}
+
+.searchForm__button {
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat; 
+    cursor: pointer;
+    overflow: hidden;
+    outline: none; 
+}
+
+.searchForm__input {
+    border: none;
+    background-color: transparent;
+    background-repeat: no-repeat; 
+    overflow: hidden;
+    outline: none; 
+}

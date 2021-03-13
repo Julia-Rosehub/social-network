@@ -1,0 +1,112 @@
+.header {
+    grid-area: h;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr 1fr;
+    display: grid;
+    background-color: white;
+    align-items: center;
+    top: 0;
+    left: 0;
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    z-index: 1;
+    -webkit-box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 8px 1px rgba(0, 0, 0, 0.2);
+}
+
+.headerNavigation {
+    padding: 20px;
+
+    .item a {
+        display: inline-block;
+        margin-right: 60px; 
+        font-weight: 700;
+        text-transform: capitalize;
+        color: #333;
+    }
+}
+
+@mixin color($color) {
+    background: lighten($color, 10%);
+}
+
+.active_blue {
+    @include color(lightblue);
+}
+
+.active_yellow {
+    @include color(gold);
+}
+
+.active_pink {
+    @include color(pink);
+}
+
+.active_grey {
+    @include color(lightgrey);
+}
+
+.active_rosybrown {
+    @include color(rosybrown);
+}
+
+.active_purple {
+    @include color(rgb(230, 156, 230));
+}
+
+.active_coral {
+    @include color(coral);
+}
+
+.active_green {
+    @include color(lightgreen);
+}
+
+.logo {
+    align-self: center;
+}
+
+.loginBlock {
+    right: 25px;
+    position: absolute;
+}
+
+.loginBlock a {
+    color: #333;
+    padding: 20px 20px ;        
+    text-decoration: none;
+}
+
+.loginBlock__foto {
+    float: left;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+    display: block;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.loginBlock__name {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1;
+    padding: 20px;
+}
+
+.profileDropdown {
+    display: grid;
+    position: fixed;
+    top: 15%;
+    right: 0;
+    background-color: white;
+    z-index: 100;
+    box-shadow: 0px 1px 15px 0px rgba(51, 51, 51, 0.2);
+}
+
+.searchAndLoginArea {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr;
+}
