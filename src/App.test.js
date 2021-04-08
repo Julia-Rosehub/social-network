@@ -6,11 +6,12 @@ import store from "./redux/redux-store";
 import { Provider } from 'react-redux';
 
 it('renders without crashing', () => {
-    const div = document.createElement('div');
-    ReactDOM.render(
-        <Router>
-            <Provider store={store}><App />
-            </Provider>
-        </Router>, div);
-    ReactDOM.unmountComponentAtNode(div);
+  const div = document.createElement('div');
+  ReactDOM.render(
+    <Router>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </Router>, div);
+  ReactDOM.unmountComponentAtNode(div);
 });

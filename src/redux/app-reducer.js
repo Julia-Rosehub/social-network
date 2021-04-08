@@ -52,7 +52,8 @@ export const initializeApp = () => dispatch => {
     Promise.all([promise])
         .then(() => {
             dispatch(initializedSuccess())
-        });
+        })
+        .catch(error => console.log('error'));
 }
 
 export default appReducer;
